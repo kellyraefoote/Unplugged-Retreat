@@ -153,10 +153,6 @@ footer p {
 }
 
 footer .content-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
   width: 55%;
   margin: 50px 0;
 }
@@ -390,8 +386,7 @@ aside {
   /*header*/
   header {
     justify-content: space-around;
-    padding: 33px;
-    width: 100%;
+    padding: 33px 0;
   }
 
   header .content-wrapper {
@@ -437,7 +432,7 @@ aside {
   }
 
   .features .features-item-description {
-      width: 50%;
+      width: 62%;
   }
 
   /* Reviews */
@@ -453,7 +448,7 @@ aside {
   /* Footer */
   footer .content-wrapper {
       width: 65%;
-      margin: 0 0;
+      margin: 100px 0;
   }
   
   .footer-content {
