@@ -209,7 +209,7 @@ aside {
   flex-flow: row wrap;
 }
 
-.features h1 { 
+.features h2 { 
   margin-bottom: 60px;
 }
 
@@ -235,7 +235,7 @@ aside {
   flex-flow: row wrap;
 }
 
-.reviews h1 {
+.reviews h2 {
   margin-bottom: 40px;
 }
 
@@ -478,7 +478,7 @@ aside {
     display: flex;
     justify-content: space-between;
     align-items: column;
-    padding: 20%;
+    padding: 20px;
 }
 
 .mission-content p {
@@ -515,9 +515,76 @@ FAQ Page
 
 }
 
-
+/*==================================================================================
+Desktop Styles Here 
+==================================================================================*/
 @media only screen and (min-width: 1200px) {
-/*Desktop styles here*/
+
+/*Homepage Styles*/
+.content-wrapper {
+ max-width: 960px;
+}
+ 
+/*Hero*/
+.hero-area h1 {
+  width: 60%;
+}
+
+/*Aside*/
+ aside .content-wrapper {
+  flex-wrap: row wrap;
+  justify-content:space-around;
+ }
+
+ aside .content-wrapper .form-description,
+ aside .content-wrapper .form {
+  width: 30%;
+ }
+
+ /*Features*/
+ .features h2 {
+    width: 90%;
+ }
+
+ .features article {
+  flex-basis: 33%;
+ }
+
+ /*Reviews*/
+
+ .reviews article div {
+  width: 42%;
+ }
+
+ 
+
+   /* ==========================================================================
+  About Page
+  ========================================================================== */
+
+  .mission h2, 
+  .contact-section .content-wrapper h2 {
+    width: 95%;
+  }
+
+  .mission-content {
+    width: 95%;
+  }
+
+  /* ==========================================================================
+  FAQ Page
+  ========================================================================== */
+  .faq h2 {
+    width: 100%;
+  }
+    
+
+
+
+
+
+
+
 }
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
