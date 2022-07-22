@@ -91,7 +91,15 @@ textarea {
 html {
 	font-size: 16px;
 }
- 
+
+img { 
+  width: 100%;
+}
+
+figure {
+  margin:0;
+}
+
 body {
  font-family: 'Open Sans', sans-serif;
  font-size: 1em;
@@ -168,8 +176,8 @@ header .content-wrapper {
   margin: 0;
 }
 
-header img {
-  width: 100%;
+header figure {
+  width: 60%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -271,11 +279,14 @@ footer .copyright  {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url(../img/jake-melara-30679-unsplash.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 500px;
 }
 
-.hero-area img {
-  width: 100%;
-}
+
 
 .hero-area h1 {
   font-size: 2.25em;
@@ -339,6 +350,10 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background-image: url(../img/rawpixel-800820-unsplash1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .features h2 { 
@@ -626,6 +641,14 @@ aside .form {
       width: 49%;       
   }
 
+  .reviews h3 {
+    min-width: 60%;
+  }
+
+  figure {
+    width: 40%;
+  }
+
   /* Footer */
   footer .content-wrapper {
       width: 65%;
@@ -734,6 +757,10 @@ Desktop Styles Here
 
  footer .content-wrapper {
   width: 90%;
+ }
+
+  figure  {
+  width: 50%;
  }
 
  
