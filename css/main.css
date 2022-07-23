@@ -416,7 +416,7 @@ input[type=button] {
 
 .map-container {
   position: relative;
-  padding-bottom: 75%;
+  padding-bottom: 125%;
   height: 0;
   overflow: hidden;
 }
@@ -699,6 +699,12 @@ aside .form {
     width: 45%;
 }
 
+.map-container {
+  position: relative;
+  padding-bottom: 45%;
+  height: 0;
+  overflow: hidden;
+}
 .contact-section .content-wrapper h2 {
     width: 80%;
 }
@@ -793,6 +799,13 @@ Desktop Styles Here
 
   .mission-content {
     width: 95%;
+  }
+
+  .map-container {
+    position: relative;
+    padding-bottom: 37.5%;
+    height: 0;
+    overflow: hidden;
   }
 
   /* ==========================================================================
