@@ -884,7 +884,13 @@ aside p {
   font-size: 1.125em;
  }
 
+footer {
+  padding: 0;
+}
 
+footer .copyright {
+  padding: 0;
+}
 
  footer .content-wrapper {
   width: 80%;
