@@ -135,14 +135,7 @@ p {
 	font-size: .875em;
   line-height: 1.285;
 }
- 
-img {
- 
-}
- 
-figure {
- 
-}
+
  
 address {
  font-family: 'Open Sans', sans-serif;
@@ -218,6 +211,7 @@ header nav ul {
   justify-content: space-around;
   width: 100%;
   padding: 0;
+  margin: 0;
 }
 
 header nav ul li {
@@ -321,11 +315,13 @@ aside h3 {
   font-weight: 300;
   font-size: 1.125em;
   letter-spacing: 1px;
+  margin: 20p 0 10px 0;
 }
 
 aside p {
   font-size: 0.875em;
   letter-spacing: 1px;
+  margin:0;
 }
 
 aside .form {
@@ -398,7 +394,7 @@ input[type=button] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  background-color: #527158;
+  background-color: #2a423a;
   color: #ede3ed;
 }
 
@@ -617,6 +613,10 @@ aside .form {
     padding: 33px 0;
   }
 
+  header figure {
+    padding-top: 0;
+  }
+
   header .content-wrapper {
     width: 100%;
     justify-content: space-between;
@@ -636,7 +636,16 @@ aside .form {
 
 /*Hero Area*/
 
+.hero-area h1 {
+  font-size: 3em;
+}
+
+.hero-area .content-wrapper {
+  margin: 0; 
+}
 /* Aside */
+
+
   aside .content-wrapper {
     margin: 50px 0;
     display: flex;
@@ -650,6 +659,10 @@ aside .form {
     margin: 0;
   }
 
+  aside h3 {
+    font-size: 1.5em;
+  }
+
   /*Features*/
   .features article {
     display: flex;
@@ -659,6 +672,10 @@ aside .form {
     flex-basis: 50%;
   }
 
+  .features h2 {
+    font-size: 2.25em;
+  }
+
   .features .features-item-description {
       width: 62%;
   }
@@ -666,7 +683,12 @@ aside .form {
   /* Reviews */
   .reviews article {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+  }
+
+  .reviews h2 {
+    font-size: 2.25em;
+    margin: 0;
   }
   
   .reviews article div {
@@ -674,11 +696,15 @@ aside .form {
   }
 
   .reviews h3 {
-    min-width: 60%;
+    min-width: 100%;
+    font-size: 1.5em;
+    margin-bottom: 0;
+    margin-top: 17px;
   }
 
   figure {
     width: 40%;
+    margin: 20px 20px 0 0 ;
   }
 
   /* Footer */
@@ -693,6 +719,10 @@ aside .form {
     align-items: center;
   }
 
+  footer h4 {
+    font-size: 1.5em;
+  }
+
   footer .social p{
     justify-content: space-between;
     padding: 20px;
@@ -700,6 +730,10 @@ aside .form {
 
   footer .contact {
       margin-bottom: 0;
+  }
+
+  footer .contact address {
+    padding: 20px;
   }
 
   footer .copyright {
@@ -765,16 +799,38 @@ Desktop Styles Here
 @media only screen and (min-width: 1200px) {
 
 /*Homepage Styles*/
+
+/*Header*/
+header img {
+  width: 50%;
+}
+
+
 .content-wrapper {
  max-width: 960px;
 }
  
 /*Hero*/
+
+.hero-area {
+  min-height: 600px;
+}
 .hero-area h1 {
-  width: 60%;
+  font-size: 3.75em;
+  max-width: 70%;
+
 }
 
 /*Aside*/
+
+aside h3 {
+  font-size: 1.875em;
+  margin: 0;
+}
+
+aside p {
+  font-size: 1.125em;
+}
  aside .content-wrapper {
   flex-wrap: row wrap;
   justify-content:space-around;
@@ -788,24 +844,63 @@ Desktop Styles Here
  /*Features*/
  .features h2 {
     width: 90%;
+    margin-top: 0;
  }
 
  .features article {
   flex-basis: 33%;
+  margin-bottom: 0;
+ }
+
+ .features p {
+  font-size: 1.125em;
  }
 
  /*Reviews*/
 
  .reviews article div {
   width: 42%;
+  margin: 0;
  }
 
+ .reviews article {
+  justify-content:left;
+  margin-top: 25px;
+ }
+
+ .reviews div {
+  padding-left: 15px;
+ }
+
+ .reviews img {
+  min-width: 455px;
+ }
+
+ .reviews h3 {
+  font-size: 1.875em;
+ }
+
+ .reviews p {
+  font-size: 1.125em;
+ }
+
+
+
  footer .content-wrapper {
-  width: 90%;
+  width: 80%;
+  margin: 50px 0;
  }
 
   figure  {
   width: 50%;
+ }
+
+ .footer-content {
+  justify-content: center;
+ }
+
+ footer div {
+  padding: 0 100px 0 100px
  }
 
  
@@ -828,6 +923,7 @@ Desktop Styles Here
     padding-bottom: 37.5%;
     height: 0;
     overflow: hidden;
+    display:flex;
   }
 
   /* ==========================================================================
