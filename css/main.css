@@ -471,7 +471,7 @@ input[type=button] {
 }
 
 .faq .content-wrapper {
-  margin: 50px 0 0 0;
+  margin: 50px 0 50px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -483,6 +483,10 @@ input[type=button] {
   margin-bottom: 40px;
   font-weight: 300;
 
+}
+
+.faq h2 {
+  margin: 0;
 }
 
 .faq .questions-and-answers {
@@ -744,7 +748,11 @@ aside .form {
      About Page
 ========================================================================== */
  
-    .mission-content {
+header figure {
+  max-width: 40%;
+}
+
+.mission-content {
     display: flex;
     justify-content: space-between;
     align-items: column;
