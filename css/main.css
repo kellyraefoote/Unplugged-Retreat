@@ -425,6 +425,7 @@ input[type=button] {
 
 .mission h1 {
   font-weight: 300;
+  font-size: 1.875em;
 }
 
 .map-container {
@@ -454,12 +455,16 @@ input[type=button] {
 
 .contact-section h2 {
   font-weight: 300;
+  margin-top: 0;
 }
 
 .contact-content p {
   margin: 0;
 }
 
+footer .content-wrapper {
+  margin: 20px 0;
+}
 /* -------------------- Mobile Styles - FAQ Page ---------------------- */
 .faq {
   display: flex;
@@ -752,11 +757,16 @@ header figure {
   max-width: 40%;
 }
 
+.mission h1 {
+  font-size: 3em;
+  margin: 0;
+}
+
 .mission-content {
     display: flex;
     justify-content: space-between;
     align-items: column;
-    padding: 20px;
+    padding: 0;
 }
 
 .mission-content p {
@@ -771,12 +781,17 @@ header figure {
 }
 .contact-section .content-wrapper h2 {
     width: 80%;
+    font-size: 3em;
 }
 
 .contact-content {
     display: flex;
     justify-content:space-between;
     align-items: flex-start;
+}
+
+.contact-content h4 {
+  font-size: 1.5em;
 }
 
 
